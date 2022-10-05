@@ -92,8 +92,8 @@
   background-color: cyan;
   border-radius: 50%;
   position: absolute;
-  bottom: 0px;
-  left: 4px;
+  bottom: 2px;
+  left: 7px;
   z-index: -1;
 }
 
@@ -125,12 +125,16 @@
 
 .project-details {
   height: 0;
-  background-image: repeating-radial-gradient(#555555, black 235px);
+  background-image: repeating-radial-gradient(#555555, black 265px);
   transition: all ease-in-out 0.5s;
   border-radius: 10px;
   display: flex;
   overflow: hidden;
   filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.3));
+  background-image: url("../../Assets/Baner/bb.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .detail-content {

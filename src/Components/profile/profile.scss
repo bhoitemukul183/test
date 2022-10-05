@@ -1,0 +1,39 @@
+.profile-main-container {
+  height: 500px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.3));
+  background-color: white;
+}
+
+.tagline {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-tag {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: black;
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.3));
+  //   font-weight: 600;
+}
