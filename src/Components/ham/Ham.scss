@@ -1,0 +1,50 @@
+.ham-main-container {
+  height: 100vh;
+  width: 100%;
+  z-index: 97;
+}
+
+.ham-container1 {
+  height: 15%;
+  width: 100%;
+  background-color: white;
+  z-index: 9;
+  position: relative;
+
+  .ham-sub-container1 {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    border-bottom-left-radius: 40px;
+  }
+}
+
+.ham-container2 {
+  height: 85%;
+  width: 100%;
+  background-color: black;
+  z-index: 9;
+  position: relative;
+
+  .ham-sub-container2 {
+    border-top-right-radius: 40px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+
+    .content-main-container {
+      height: 100%;
+      width: 90%;
+      padding: 0 5%;
+      overflow-y: auto;
+    }
+  }
+}

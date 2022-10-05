@@ -1,0 +1,91 @@
+.design-container {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  display: block;
+  z-index: 98;
+  &.remove {
+    transition: all ease-in 0.9s;
+    z-index: 0;
+    .container1 {
+      transition: all ease-in 0.9s;
+      transform: translateX(100%);
+      z-index: 0;
+      .sub-container1 {
+        transition: all ease-in 0.9s;
+      }
+    }
+    .container2 {
+      transition: all ease-in 0.9s;
+      transform: translateX(-100%);
+      z-index: 0;
+      background-color: black;
+      .sub-container2 {
+        transition: all ease-in 0.9s;
+      }
+    }
+  }
+}
+.container1 {
+  transition: all ease-in 0.9s;
+  height: 50%;
+  background-color: black;
+  position: relative;
+}
+
+.sub-container1 {
+  transition: all ease-in 0.9s;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-bottom-left-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+.container2 {
+  height: 50%;
+  transition: all ease-in 0.9s;
+  background-color: white;
+  position: relative;
+}
+
+.sub-container2 {
+  transition: all ease-in 0.9s;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-top-right-radius: 20%;
+
+  .content {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    height: 200px;
+    padding: 40px;
+    color: white;
+    text-align: justify;
+    line-height: 30px;
+  }
+}
+.nxt-btn {
+  height: 50px;
+  width: 150px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
