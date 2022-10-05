@@ -16,8 +16,8 @@ function Firstpage() {
         <div className="container2">
           <div className="sub-container2">
             <div className="content">
-              Hey.... I Am Mukul. I Just Triying To Explore My Self In Front Of
-              You.
+              Hey👋, <br /> I Am Mukul. I Just Triying To Explore My Self In
+              Front Of You.
             </div>
             <div className="nxt-btn" onClick={() => setRemovePage(true)}>
               Know Me More →
