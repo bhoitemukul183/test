@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Landingpage from "../src/Components/landingpage/Landingpage.js";
 import Firstpage from "./Components/firstpage/Firstpage";
