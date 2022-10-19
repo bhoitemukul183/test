@@ -2,6 +2,8 @@ import React from "react";
 import "./Ham.scss";
 import Baner from "../Baner/Baner.js";
 import Profile from "../profile/profile";
+import Footer from "../Footer/Footer.js";
+import Gallery from "../Gallery/gallery.js";
 
 function ham() {
   return (
@@ -17,7 +19,10 @@ function ham() {
             {/* All Elements Write Here */}
             <br />
             <Profile />
-            <Baner></Baner>
+            <Baner />
+            <Gallery />
+            <Footer />
+            <div style={{ height: "300px" }}></div>
           </div>
         </div>
       </div>

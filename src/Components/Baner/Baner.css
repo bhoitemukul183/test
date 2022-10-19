@@ -22,20 +22,18 @@
   left: -15px;
   scroll-snap-align: center;
   scale: 1;
-  background-image: url("../../Assets/Baner/bb.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(35deg, rgb(0 0 0) -81.71%, #ffffff42 79.17%);
 }
 
 .banner-content-container .content {
   height: 90%;
   width: 90%;
   padding: 0 5%;
-  color: cyan;
+  color: black;
+  font-weight: 600;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -54,6 +52,7 @@
   width: 20px;
   background-color: black;
   border-radius: 50%;
+  color: cyan;
 }
 .viwe-logo svg {
   height: 100%;
@@ -125,16 +124,12 @@
 
 .project-details {
   height: 0;
-  background-image: repeating-radial-gradient(#555555, black 265px);
+  background: linear-gradient(95deg, rgb(0 0 0) -81.71%, #ffffff42 79.17%);
   transition: all ease-in-out 0.5s;
   border-radius: 10px;
   display: flex;
   overflow: hidden;
   filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.3));
-  background-image: url("../../Assets/Baner/bb.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .detail-content {
@@ -148,12 +143,15 @@
   height: 50px;
   width: 100%;
   display: flex;
-  color: cyan;
+  color: black;
+  font-weight: 600;
   align-items: center;
 }
 
 .detail-content-row b {
   color: white;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 /* #2fa991 */
