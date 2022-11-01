@@ -1,11 +1,12 @@
 import React from "react";
 import "./Ham.scss";
 import Baner from "../Baner/Baner.js";
-import Profile from "../profile/profile";
+import Profile from "../profile/Profile.jsx";
 import Footer from "../Footer/Footer.js";
-import Gallery from "../Gallery/gallery.js";
+import Media from "../Media/Media.js";
+import Gallery from "../Cards/Cards";
 
-function ham() {
+function Ham() {
   return (
     <div className="ham-main-container">
       <div className="ham-container1">
@@ -20,7 +21,8 @@ function ham() {
             <br />
             <Profile />
             <Baner />
-            <Gallery />
+            {/* <Gallery /> */}
+            <Media />
             <Footer />
             <div style={{ height: "300px" }}></div>
           </div>
@@ -30,4 +32,4 @@ function ham() {
   );
 }
 
-export default ham;
+export default Ham;
