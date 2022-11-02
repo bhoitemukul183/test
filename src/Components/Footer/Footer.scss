@@ -18,7 +18,7 @@
 .btn {
   height: 40px;
   width: 60px;
-  background-color: black;
+  background-image: linear-gradient(125deg, #1893a2, #101733);
   border-radius: 50%;
   padding: 15%;
 }
@@ -46,14 +46,14 @@
 .footer-sub-container2 {
   height: 60%;
   width: 100%;
-  background-color: black;
+  background-color: #101733;
   display: flex;
   justify-content: space-between;
 }
 .content-for-radius {
   width: 44.5%;
   height: 100%;
-  background-color: black;
+  background-color: #101733;
   border-top-right-radius: 50px;
   z-index: 2;
   margin: -15px 0;

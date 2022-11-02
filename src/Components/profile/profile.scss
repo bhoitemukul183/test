@@ -1,11 +1,12 @@
 .profile-main-container {
-  height: 500px;
-  width: 100%;
-  border-radius: 4px;
+  // height: 500px;
+  height: auto;
+  width: 90%;
+  border-radius: 10px;
   background-color: white;
   margin: 20px 0;
+  padding: 5%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  // border: 1px dotted black;
 }
 
 .profile-main-container:hover {
@@ -62,7 +63,8 @@
   align-items: center;
   justify-content: space-around;
   margin: 2px 0;
-  border-bottom: 2px dotted rgba(128, 128, 128, 0.1);
+  border-bottom: 2px dotted rgba(128, 128, 128, 0.3);
+  // border-bottom: grey 2px dotted;
 }
 
 .table-data {

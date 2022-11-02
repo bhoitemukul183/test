@@ -42,5 +42,3 @@ function Landingpage() {
 }
 
 export default Landingpage;
-
-// style = {{ height: changecolor }}

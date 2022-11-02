@@ -7,7 +7,7 @@
 .ham-container1 {
   height: 15%;
   width: 100%;
-  background-color: rgba(237, 231, 225, 1);
+  background-color: azure;
   z-index: 9;
   position: relative;
 
@@ -18,7 +18,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-image: linear-gradient(125deg, #1893a2, #101733);
     border-bottom-left-radius: 40px;
   }
 }
@@ -26,7 +26,7 @@
 .ham-container2 {
   height: 85%;
   width: 100%;
-  background-color: black;
+  background-color: #101733;
   z-index: 9;
   position: relative;
 
@@ -38,8 +38,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-color: rgba(237, 231, 225, 1);
-
+    // background-image: radial-gradient(azure, blue);
+    background-color: azure;
     .content-main-container {
       height: 98%;
       width: 90%;
