@@ -1,10 +1,18 @@
+import React, { useState, useEffect, Component } from "react";
 import "./profile.scss";
 import bag from "../../Assets/bag.png";
 import Univercity from "../../Assets/univercity.png";
 import Cards from "../Cards/Cards";
-import React, { useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Profile() {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     const [isShow, setisShow] = useState(false)
     const handleClick = () => {
         setisShow(!isShow);
@@ -87,5 +95,4 @@ function Profile() {
         </>
     )
 }
-
 export default Profile;

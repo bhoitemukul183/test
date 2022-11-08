@@ -19,6 +19,8 @@ function Firstpage() {
               Hey👋, <br /> I Am Mukul. I Just Triying To Explore My Self In
               Front Of You.
             </div>
+            <div class="wave"></div>
+            <div class="wave"></div>
             <div className="nxt-btn" onClick={() => setRemovePage(true)}>
               Know Me More →
             </div>
