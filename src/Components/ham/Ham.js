@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Ham.scss";
 import Baner from "../Baner/Baner.js";
 import Profile from "../profile/Profile.jsx";
 import Footer from "../Footer/Footer.js";
 import Media from "../Media/Media.js";
+import Navbar from "../Navbar/Navbar";
+import Logo from "../../Assets/logo.png";
 
 function Ham() {
-
-
   return (
     <div className="ham-main-container">
       <div className="ham-container1">
         <div className="ham-sub-container1">
-          <div className="logo"></div>
+          <div className="logo">
+            <img src={Logo} alt="" />
+          </div>
           <div className="ham-burger">
-            <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg>
+            <Navbar />
           </div>
         </div>
       </div>
