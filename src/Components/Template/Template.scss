@@ -1,5 +1,5 @@
 .self-info-container {
-  height: 500px;
+  height: 600px;
   width: 100%;
   position: relative;
   background-color: white;
@@ -18,4 +18,76 @@
     width: 100%;
     background-color: transparent;
   }
+}
+
+.Profile-Container {
+  height: 70px;
+  width: 100%;
+
+  .Profile-picture-Container {
+    width: 60%;
+    height: 80%;
+    background-image: linear-gradient(125deg, #1893a2, #101733);
+    border-radius: 0 40px 40px 0;
+    padding: 5px 5px;
+  }
+  .profile-picture {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    float: right;
+    background-color: black;
+    overflow: hidden;
+  }
+  .profile-picture img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.profile-content {
+  height: 300px;
+  width: 90%;
+  padding: 5%;
+}
+
+.profile-table-container {
+  width: 100%;
+}
+
+.profile-table-row {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2px 0;
+  border-bottom: 2px dotted rgba(128, 128, 128, 0.3);
+}
+
+.profile-table-data {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 2.5%;
+  font-size: 14px;
+}
+
+.profile-table-data a {
+  color: blue;
+  text-decoration: underline;
+  line-height: 50px;
+}
+.profile-table-tag {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 2.5%;
+  font-size: 15px;
+  color: gray;
+  text-align: center;
+}
+
+.profile-table-row :nth-child(2) {
+  width: 80%;
 }
