@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer.js";
 import Media from "../Media/Media.js";
 import Navbar from "../Navbar/Navbar";
 import Logo from "../../Assets/logo.png";
+import Template from "../Template/Template";
 
 function Ham() {
   return (
@@ -27,6 +28,7 @@ function Ham() {
             <br />
             <Profile />
             <Baner />
+            <Template />
             <Media />
             <Footer />
             <div style={{ height: "300px" }}></div>
