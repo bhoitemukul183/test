@@ -26,9 +26,9 @@ function Ham() {
           <div className="content-main-container">
             {/* All Elements Write Here */}
             <br />
+            <Template />
             <Profile />
             <Baner />
-            <Template />
             <Media />
             <Footer />
             <div style={{ height: "300px" }}></div>
