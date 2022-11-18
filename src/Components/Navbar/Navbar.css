@@ -6,7 +6,7 @@
 }
 
 #nav-icon1 {
-  width: 45px;
+  width: 35px;
   height: 35px;
   position: relative;
   -webkit-transform: rotate(0deg);
@@ -85,13 +85,13 @@
 }
 
 #nav-icon1.open span:nth-child(1) {
-  left: 5px;
+  left: 0px;
   top: 12px;
   background-color: white;
 }
 
 #nav-icon1.open span:nth-child(2) {
-  left: calc(50% - 5px);
+  left: calc(35% - 0px);
   top: 12px;
   background-color: white;
 }
@@ -109,13 +109,13 @@
 }
 
 #nav-icon1.open span:nth-child(5) {
-  left: 5px;
+  left: 0px;
   top: 25px;
   background-color: white;
 }
 
 #nav-icon1.open span:nth-child(6) {
-  left: calc(50% - 5px);
+  left: calc(35% - 0px);
   top: 25px;
   background-color: white;
 }

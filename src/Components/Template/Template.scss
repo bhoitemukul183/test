@@ -4,6 +4,7 @@
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px;
 }
 
 .template-parent {
@@ -27,7 +28,9 @@
     border-radius: 0 40px 40px 0;
     padding: 5px 5px;
     box-shadow: rgb(100 100 111 / 20%) 10px 15px 20px;
+    position: relative;
   }
+
   .profile-picture {
     height: 55px;
     width: 55px;
@@ -40,6 +43,19 @@
     height: 100%;
     width: 100%;
   }
+}
+.Profile-picture-Container ::after {
+  position: absolute;
+  bottom: -39px;
+  left: -13px;
+  height: 25px;
+  width: 20px;
+  content: "";
+  clear: both;
+  border: 15px solid;
+  border-color: transparent transparent transparent #1b7d89;
+  border-radius: 31px;
+  rotate: 33deg;
 }
 
 .profile-content {
