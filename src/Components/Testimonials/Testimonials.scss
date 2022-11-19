@@ -114,6 +114,7 @@ input[type="text" i] {
   padding: 10px;
   background-color: transparent;
   border-bottom: 2px solid black;
+  width: 100%;
 }
 
 .input-row {
@@ -122,6 +123,7 @@ input[type="text" i] {
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 90%;
 
   input:focus-visible {
     outline: -webkit-focus-ring-color auto 0px;

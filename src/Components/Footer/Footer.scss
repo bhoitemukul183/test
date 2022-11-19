@@ -46,19 +46,12 @@
 .footer-sub-container2 {
   height: 60%;
   width: 100%;
-  background-color: #101733;
+  background-color: white;
   display: flex;
   justify-content: space-between;
 }
-.content-for-radius {
-  width: 44.5%;
+
+.footer-sub-container2 img {
   height: 100%;
-  background-color: #101733;
-  border-top-right-radius: 50px;
-  z-index: 2;
-  margin: -15px 0;
-}
-.footer-sub-container2 :nth-child(2) {
-  border-top-left-radius: 50px;
-  border-top-right-radius: 0px;
+  width: 100%;
 }

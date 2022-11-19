@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import Footerimage from "../../Assets/footer.svg";
 
 function Footer() {
     return (
@@ -11,8 +12,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="footer-sub-container2">
-                    <div className="content-for-radius"></div>
-                    <div className="content-for-radius"></div>
+                    <img src={Footerimage} alt="" />
                 </div>
             </div>
         </>
