@@ -70,7 +70,7 @@ function Testimonials() {
                         <img src={ProfilePic} alt="" />
                     </div>
                     <div className="testimonial-content">
-                        <ImQuotesLeft />
+                        <ImQuotesLeft />&nbsp;
                         Text in a pre element is displayed in a fixed-width font, and it
                         preserves both spaces.........{name}
                         <ImQuotesRight />
