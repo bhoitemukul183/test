@@ -7,7 +7,7 @@
 
   .testimonial-cards {
     height: 200px;
-    min-width: 80%;
+    min-width: 85%;
     position: relative;
     margin-left: 30px;
     background-size: contain;
@@ -21,22 +21,23 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+    flex-direction: column;
   }
 }
 .testimonial-image {
   content: "";
-  height: 90px;
-  width: 90px;
+  height: 65px;
+  width: 65px;
   background-color: white;
-  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.3));
-  position: absolute;
-  top: -20px;
-  left: 0;
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.1));
   border-radius: 50%;
   display: inline-block;
   overflow: hidden;
 }
-
+.testimonial-image img {
+  height: 100%;
+  width: 100%;
+}
 .testimonial-container::-webkit-scrollbar {
   display: none;
 }
@@ -45,12 +46,95 @@
   height: 100px;
   width: 90%;
   font-size: 15px;
-  margin: 20% 0 auto;
+  margin: 10px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  position: absolute;
   line-height: 25px;
 }
+.testimonial-name {
+  width: 100%;
+  text-align: end;
+  font-size: 15px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.add-thought-btn-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .add-thought-btn {
+    background-image: linear-gradient(125deg, #38919c, #101733);
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.3));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+  }
+}
+.form {
+  height: 100vh;
+  background-image: linear-gradient(125deg, #38919c, #101733);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-content {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+input[type="text" i] {
+  height: 20px;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
+
+.input-row {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+    filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.3));
+  }
+  label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-size: 20px;
+  }
+}
+input:focus-visible + label {
+  transform: translateY(-15px) scale(0.8);
+  transform-origin: 0 0;
+  color: white;
+  transition: all ease-in-out 0.5s;
+}
+
 // testimonial-cards::before

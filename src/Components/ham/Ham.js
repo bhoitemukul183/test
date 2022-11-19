@@ -32,7 +32,7 @@ function Ham() {
             <Baner />
             <div style={{ height: "100px" }}></div>
             <Testimonials />
-            <Media />
+            {/* <Media /> */}
             <Footer />
             <div style={{ height: "300px" }}></div>
           </div>

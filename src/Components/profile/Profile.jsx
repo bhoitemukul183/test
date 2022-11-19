@@ -9,9 +9,6 @@ import 'aos/dist/aos.css';
 
 function Profile() {
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
 
     const [isShow, setisShow] = useState(false)
     const handleClick = () => {
