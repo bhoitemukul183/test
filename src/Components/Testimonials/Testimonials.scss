@@ -93,15 +93,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
+  transition: all ease-in-out 0.5s;
 }
 
 .form-content {
-  height: 80%;
-  width: 100%;
+  height: 300px;
+  width: 330px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
 }
 
 input[type="text" i] {
@@ -109,7 +113,7 @@ input[type="text" i] {
   border: none;
   padding: 10px;
   background-color: transparent;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid black;
 }
 
 .input-row {
@@ -127,14 +131,38 @@ input[type="text" i] {
     position: absolute;
     bottom: 10px;
     left: 0;
-    font-size: 20px;
+    color: gray;
+    font-size: 15px;
   }
 }
-input:focus-visible + label {
-  transform: translateY(-15px) scale(0.8);
+input[type="text" i]:focus-visible + label {
+  transform: translateY(-20px) scale(0.8);
   transform-origin: 0 0;
-  color: white;
+  color: black;
   transition: all ease-in-out 0.5s;
 }
 
-// testimonial-cards::before
+.form-close {
+  font-size: 30px;
+  text-align: end;
+  display: flex;
+  padding: 0px 5%;
+  flex-direction: row-reverse;
+  align-self: flex-end;
+}
+
+form {
+  display: flex;
+  width: 65%;
+  justify-content: space-evenly;
+}
+
+.submit {
+  width: 80px;
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(125deg, #38919c, #101733);
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+}
