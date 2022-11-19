@@ -4,8 +4,12 @@ import ProfilePic from "../../Assets/prof.jpg";
 
 function Testimonials() {
     const [openForm, setOpenForm] = useState(false);
-    const [testimonial, setTestimonial] = useState({ name: '', desc: '', img: '' })
-    const [testimonialList, setTestimonialList] = useState([])
+    const [testimonial, setTestimonial] = useState({
+        name: "",
+        desc: "",
+        img: "",
+    });
+    const [testimonialList, setTestimonialList] = useState([]);
 
     function ImQuotesLeft(props) {
         return (
@@ -56,14 +60,26 @@ function Testimonials() {
     }
 
     function AiFillCloseCircle(props) {
-        return <svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 1024 1024" height="1em" width="1em" {...props}><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z" /></svg>;
+        return (
+            <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth={0}
+                viewBox="0 0 1024 1024"
+                height="1em"
+                width="1em"
+                {...props}
+            >
+                <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z" />
+            </svg>
+        );
     }
 
     const submitForm = () => {
         setTestimonialList([...[...testimonialList, testimonial]]);
-        setTestimonial({ name: '', desc: '', img: '' })
-        setOpenForm(false)
-    }
+        setTestimonial({ name: "", desc: "", img: "" });
+        setOpenForm(false);
+    };
     return (
         <>
             <div className="testimonial-container">
@@ -72,69 +88,90 @@ function Testimonials() {
                         <img src={ProfilePic} alt="" />
                     </div>
                     <div className="testimonial-content">
-                        <ImQuotesLeft />&nbsp;
-                        Text in a pre element is displayed in a fixed-width font, and it
-                        preserves both spaces.........
+                        <ImQuotesLeft />
+                        &nbsp; Text in a pre element is displayed in a fixed-width font, and
+                        it preserves both spaces.........
                         <ImQuotesRight />
                     </div>
                     <div className="testimonial-name">- Mukul Bhoite</div>
                 </div>
                 {testimonialList.map((card, index) => {
-                    return <div className="testimonial-cards" key={index}>
-                        <div className="testimonial-image">
-                            <img src={card.img} alt="" />
+                    return (
+                        <div className="testimonial-cards" key={index}>
+                            <div className="testimonial-image">
+                                <img src={card.img} alt="" />
+                            </div>
+                            <div className="testimonial-content">
+                                <ImQuotesLeft />
+                                &nbsp;{card.desc}&nbsp;
+                                <ImQuotesRight />
+                            </div>
+                            <div className="testimonial-name">- {card.name}</div>
                         </div>
-                        <div className="testimonial-content">
-                            <ImQuotesLeft />
-                            {card.desc}
-                            <ImQuotesRight />
-                        </div>
-                        <div className="testimonial-name">- {card.name}</div>
-                    </div>
+                    );
                 })}
             </div>
             <br />
             <div className="add-thought-btn-container">
-                <div
-                    className="add-thought-btn"
-                    onClick={() => setOpenForm(true)}
-                >
+                <div className="add-thought-btn" onClick={() => setOpenForm(true)}>
                     <AiFillEdit />
                     <span>Add Thoughts</span>
                 </div>
             </div>
             {openForm && (
-
                 <div className="form" id="form">
                     <div className="form-content">
                         <div className="form-close" onClick={() => setOpenForm(false)}>
                             <AiFillCloseCircle />
                         </div>
                         <div className="input-row">
-                            <input type="text" id="name" value={testimonial.name} onChange={(e) => setTestimonial({ ...testimonial, name: e.target.value })} />
+                            <input
+                                type="text"
+                                id="name"
+                                value={testimonial.name}
+                                onChange={(e) =>
+                                    setTestimonial({ ...testimonial, name: e.target.value })
+                                }
+                            />
                             <label>Name</label>
                         </div>
                         <div className="input-row">
-                            <input type="text" id="name" value={testimonial.desc} onChange={(e) => setTestimonial({ ...testimonial, desc: e.target.value })} />
+                            <input
+                                type="text"
+                                id="name"
+                                value={testimonial.desc}
+                                onChange={(e) =>
+                                    setTestimonial({ ...testimonial, desc: e.target.value })
+                                }
+                            />
                             <label>Thought</label>
                         </div>
-                        <form action="/action_page.php">
-                            <input type="radio" id="male" name="fav_language" value="MALE" />
-                            <label htmlFor="male">Male</label>
-                            <input type="radio" id="Female" name="fav_language" value="FEMALE" />
-                            <label htmlFor="Female">Female</label>
-                        </form>
+                        <div className="gender-container">
+                            <div className="gender-sub-container">
+                                <input type="radio" id="male" name="fav_language" value="MALE" />
+                                <label htmlFor="male">Male</label>
+                            </div>
+                            <div className="gender-sub-container">
+                                <input
+                                    type="radio"
+                                    id="Female"
+                                    name="fav_language"
+                                    value="FEMALE"
+                                />
+                                <label htmlFor="Female">Female</label>
+                            </div>
+                        </div>
                         {/* <div className="input-row">
                             <input type="text" id="name" value={testimonial.img} onChange={(e) => setTestimonial({ ...testimonial, img: e.target.value })} />
                         </div> */}
                         {/* <button submit="submit" id="submit" onClick={submitForm} >submit </button> */}
                         <br></br>
-                        <div className="submit" id="submit" onClick={submitForm}>Submit</div>
+                        <div className="submit" id="submit" onClick={submitForm}>
+                            Submit
+                        </div>
                     </div>
                 </div>
-
-            )
-            }
+            )}
         </>
     );
 }

@@ -1,7 +1,8 @@
 import { textAlign } from "@mui/system";
 import React, { useState } from "react";
 import "./Baner.css";
-import bgimage from "../../Assets/Baner/bb.jpg";
+// import bgimage from "../../Assets/Baner/bb.jpg";
+import Cardwave from "../../Assets/cardwave.svg";
 
 // import * as React from "react";
 
@@ -57,6 +58,7 @@ export const Baner = () => {
           className="banner-content-container"
           onClick={() => openPdp(changeheight == 1 ? 0 : 1)}
         >
+          <img src={Cardwave} alt="" />
           <div className="content">
             <div className="content-row">
               {" "}
@@ -79,6 +81,7 @@ export const Baner = () => {
           className="banner-content-container"
           onClick={() => openPdp(changeheight == 2 ? 0 : 2)}
         >
+          <img src={Cardwave} alt="" />
           <div className="content">
             <div className="content-row">
               {" "}
@@ -101,6 +104,7 @@ export const Baner = () => {
           className="banner-content-container"
           onClick={() => openPdp(changeheight == 3 ? 0 : 3)}
         >
+          <img src={Cardwave} alt="" />
           <div className="content">
             <div className="content-row">
               {" "}
@@ -123,13 +127,12 @@ export const Baner = () => {
           className="banner-content-container"
           onClick={() => openPdp(changeheight == 4 ? 0 : 4)}
         >
+          <img src={Cardwave} alt="" />
           <div className="content">
             <div className="content-row">
-              {" "}
               <b> Name :</b> Food Site
             </div>
             <div className="content-row">
-              {" "}
               <b> Description :</b> The Site Create For Making Digitelis Your
               Food Menu.
             </div>
@@ -145,13 +148,12 @@ export const Baner = () => {
           className="banner-content-container"
           onClick={() => openPdp(changeheight == 5 ? 0 : 5)}
         >
+          <img src={Cardwave} alt="" />
           <div className="content">
             <div className="content-row">
-              {" "}
               <b> Name :</b> Food Site
             </div>
             <div className="content-row">
-              {" "}
               <b> Description :</b> The Site Create For Making Digitelis Your
               Food Menu.
             </div>

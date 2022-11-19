@@ -154,12 +154,19 @@ input[type="text" i]:focus-visible + label {
   align-self: flex-end;
 }
 
-form {
+.gender-container {
   display: flex;
   width: 65%;
   justify-content: space-evenly;
+  height: 50px;
 }
-
+.gender-sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
 .submit {
   width: 80px;
   padding: 10px;
