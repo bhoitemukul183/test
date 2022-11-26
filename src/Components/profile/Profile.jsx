@@ -17,7 +17,7 @@ function Profile() {
 
     return (
         <>
-            <div className="profile-main-container">
+            <div className="profile-main-container" id="exp">
                 <div className="tagline">
                     <div className="icon-container">
                         <div className="icon"><img src={bag} alt="" /></div>
@@ -58,7 +58,7 @@ function Profile() {
                     </div>
                 </div>
             </div>
-            <div className="profile-main-container">
+            <div className="profile-main-container" id="edu">
                 <div className="tagline">
                     <div className="icon-container">
                         <div className="icon"><img src={Univercity} alt="" /></div>

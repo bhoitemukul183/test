@@ -127,7 +127,7 @@ input[type="text" i] {
   width: 90%;
 
   input:focus-visible {
-    outline: -webkit-focus-ring-color auto 0px;
+    outline: none;
     filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.3));
   }
   label {
@@ -143,6 +143,7 @@ input[type="text" i]:focus-visible + label {
   transform-origin: 0 0;
   color: black;
   transition: all ease-in-out 0.5s;
+  border-radius: 0;
 }
 
 .form-close {
@@ -175,4 +176,7 @@ input[type="text" i]:focus-visible + label {
   font-size: 14px;
   border-radius: 5px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

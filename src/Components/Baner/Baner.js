@@ -48,7 +48,7 @@ export const Baner = () => {
 
   return (
     <div>
-      <div className="main-tag-container">
+      <div className="main-tag-container" id="project">
         <div className="tag-sub-conteiner">
           <div className="tag">Projects</div>
         </div>

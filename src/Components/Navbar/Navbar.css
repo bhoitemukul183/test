@@ -142,4 +142,38 @@
   transition: all 0.5s ease-in-out;
   border-bottom-left-radius: 40px;
   opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.nav-content {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.nav-row {
+  height: 50px;
+  width: 100%;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-weight: 600; */
+}
+
+.nav-row:hover {
+  filter: drop-shadow(5px 6px 4px rgba(10, 22, 132, 0.3));
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

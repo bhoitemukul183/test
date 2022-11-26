@@ -124,7 +124,7 @@ function Template() {
 
   return (
     <>
-      <div className="self-info-container">
+      <div className="self-info-container" id="self-info">
         <div className="Profile-Container">
           <div className="Profile-picture-Container">
             <div className="profile-picture">

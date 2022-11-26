@@ -28,7 +28,25 @@ function Navbar() {
             height: hamactive == "open" ? "60%" : "0",
             width: hamactive == "open" ? "60%" : "0",
           }}
-        ></div>
+        >
+          <div className="nav-content">
+            <div className="nav-row">
+              <a href="#self-info"> About</a>
+            </div>
+            <div className="nav-row">
+              <a href="#exp"> Experience</a>
+            </div>
+            <div className="nav-row">
+              <a href="#edu"> Education</a>
+            </div>
+            <div className="nav-row">
+              <a href="#project"> Projects</a>
+            </div>
+            {/* <div className="nav-row"> Experience</div>
+            <div className="nav-row">Education</div>
+            <div className="nav-row">Projects</div>      */}
+          </div>
+        </div>
       </div>
       <div className="header">
         <div id="nav-icon1" className={hamactive} onClick={open}>

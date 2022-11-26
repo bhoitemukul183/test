@@ -8,6 +8,7 @@ import Navbar from "../Navbar/Navbar";
 import Logo from "../../Assets/logo.png";
 import Template from "../Template/Template";
 import Testimonials from "../Testimonials/Testimonials.js";
+import Contactus from "../ContactUs/ContactUs.js";
 
 function Ham() {
   return (
@@ -30,11 +31,14 @@ function Ham() {
             <Template />
             <Profile />
             <Baner />
-            <div style={{ height: "100px" }}></div>
+            <div className="height"></div>
             <Testimonials />
+            <div className="height"></div>
+            <Contactus />
             {/* <Media /> */}
             <Footer />
-            <div style={{ height: "300px" }}></div>
+            <div className="height"></div>
+            <div className="height"></div>
           </div>
         </div>
       </div>
