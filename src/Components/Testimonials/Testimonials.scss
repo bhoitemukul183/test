@@ -136,6 +136,15 @@ input[type="text" i] {
     left: 0;
     color: gray;
     font-size: 15px;
+    transition: all ease-in-out 0.5s;
+
+    &.active {
+      transform: translateY(-20px) scale(0.8);
+      transform-origin: 0 0;
+      color: black;
+      transition: all ease-in-out 0.5s;
+      border-radius: 0;
+    }
   }
 }
 input[type="text" i]:focus-visible + label {

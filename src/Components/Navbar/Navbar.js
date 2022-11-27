@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Navbar.css";
 
 function Navbar() {
   const [hamactive, sethamActive] = useState("");
-
+  const modalRef = useRef(null);
   function open() {
     sethamActive(hamactive == "open" ? "" : "open");
     if (!hamactive) {
@@ -12,11 +12,16 @@ function Navbar() {
       document.body.style.overflow = "unset";
     }
   }
-
+  const onOutsideClick = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      sethamActive("");
+    }
+  };
   return (
     <div>
       <div
         className="nav-tray"
+        onClick={onOutsideClick}
         style={{
           height: hamactive == "open" ? "100vh" : "0",
           width: hamactive == "open" ? "100%" : "0",
@@ -24,6 +29,7 @@ function Navbar() {
       >
         <div
           className="nav-sub-tray"
+          ref={modalRef}
           style={{
             height: hamactive == "open" ? "60%" : "0",
             width: hamactive == "open" ? "60%" : "0",
@@ -31,16 +37,24 @@ function Navbar() {
         >
           <div className="nav-content">
             <div className="nav-row">
-              <a href="#self-info"> About</a>
+              <a onClick={() => sethamActive("")} href="#self-info">
+                About
+              </a>
             </div>
             <div className="nav-row">
-              <a href="#exp"> Experience</a>
+              <a onClick={() => sethamActive("")} href="#exp">
+                Experience
+              </a>
             </div>
             <div className="nav-row">
-              <a href="#edu"> Education</a>
+              <a onClick={() => sethamActive("")} href="#edu">
+                Education
+              </a>
             </div>
             <div className="nav-row">
-              <a href="#project"> Projects</a>
+              <a onClick={() => sethamActive("")} href="#project">
+                Projects
+              </a>
             </div>
             {/* <div className="nav-row"> Experience</div>
             <div className="nav-row">Education</div>

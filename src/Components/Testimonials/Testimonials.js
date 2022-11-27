@@ -93,7 +93,7 @@ function Testimonials() {
 
   const submitForm = () => {
     setTestimonialList([...[...testimonialList, testimonial]]);
-    setTestimonial({ name: "", desc: "", img: "" });
+    setTestimonial({ name: "", desc: "", gender: "Male" });
     setOpenForm(false);
   };
   return (
@@ -115,7 +115,11 @@ function Testimonials() {
           return (
             <div className="testimonial-cards" key={index}>
               <div className="testimonial-image">
-                <img src={card.img} alt="" />
+                {card.gender == "Male" ? (
+                  <img src={ProfilePic} alt="" />
+                ) : (
+                  <img src={card.img} alt="" />
+                )}
               </div>
               <div className="testimonial-content">
                 <ImQuotesLeft />
@@ -149,7 +153,9 @@ function Testimonials() {
                   setTestimonial({ ...testimonial, name: e.target.value })
                 }
               />
-              <label>Name</label>
+              <label className={`${testimonial.name ? "active" : ""}`}>
+                Name
+              </label>
             </div>
             <div className="input-row">
               <input
@@ -160,24 +166,36 @@ function Testimonials() {
                   setTestimonial({ ...testimonial, desc: e.target.value })
                 }
               />
-              <label>Thought</label>
+              <label className={`${testimonial.desc ? "active" : ""}`}>
+                Thought
+              </label>
             </div>
             <div className="gender-container">
-              <div className="gender-sub-container">
+              <div
+                className="gender-sub-container"
+                onClick={() =>
+                  setTestimonial({ ...testimonial, gender: "Male" })
+                }
+              >
                 <input
                   type="radio"
-                  id="male"
+                  id="Male"
                   name="fav_language"
-                  value="MALE"
+                  value={testimonial.gender == "Male"}
                 />
-                <label htmlFor="male">Male</label>
+                <label htmlFor="Male">Male</label>
               </div>
-              <div className="gender-sub-container">
+              <div
+                className="gender-sub-container"
+                onClick={() =>
+                  setTestimonial({ ...testimonial, gender: "Female" })
+                }
+              >
                 <input
                   type="radio"
                   id="Female"
                   name="fav_language"
-                  value="FEMALE"
+                  value={testimonial.gender == "Female"}
                 />
                 <label htmlFor="Female">Female</label>
               </div>
