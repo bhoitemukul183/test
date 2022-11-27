@@ -1,7 +1,7 @@
 .main-container {
   height: 100vh;
   width: 100%;
-  background-color: #060b25;
+  background-image: linear-gradient(125deg, #1893a2, #101733);
   position: absolute;
   top: 0;
   left: 0;
@@ -94,4 +94,12 @@ input[type="range"]::-webkit-slider-thumb {
 
 input[type="range"]::-webkit-slider-thumb:active {
   cursor: -webkit-grabbing;
+}
+
+.swipe-tag {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 80px;
+  left: 35%;
 }

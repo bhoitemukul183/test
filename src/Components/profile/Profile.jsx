@@ -38,7 +38,7 @@ function Profile() {
                     </div>
                     <div className='table-row'>
                         <div className='table-data'> Fooddiiee</div>
-                        <div className='table-data'>It's digitel menu</div>
+                        <div className='table-data'>It's digital menu</div>
                         <div className='table-data'> <a>view</a></div>
                     </div>
                     <div className='table-row'>

@@ -9,6 +9,7 @@ import Logo from "../../Assets/logo.png";
 import Template from "../Template/Template";
 import Testimonials from "../Testimonials/Testimonials.js";
 import Contactus from "../ContactUs/ContactUs.js";
+import Copyright from "../Copyright/Copyright.js";
 
 function Ham() {
   return (
@@ -35,6 +36,8 @@ function Ham() {
             <Testimonials />
             <div className="height"></div>
             <Contactus />
+            <div className="height"></div>
+            <Copyright />
             {/* <Media /> */}
             <Footer />
             <div className="height"></div>

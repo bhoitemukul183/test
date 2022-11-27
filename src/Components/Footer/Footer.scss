@@ -21,6 +21,22 @@
   background-image: linear-gradient(125deg, #1893a2, #101733);
   border-radius: 50%;
   padding: 15%;
+  a {
+    &:active,
+    &:hover,
+    &:visited,
+    &:focus {
+      outline: unset;
+      background-color: transparent;
+    }
+  }
+
+  svg {
+    height: 100%;
+    width: 100%;
+    color: white;
+    transform: rotate(-136deg);
+  }
 }
 
 .middle-button {
@@ -48,9 +64,4 @@
   display: flex;
   justify-content: space-between;
   border-radius: 40% 40% 0 0;
-}
-
-.footer-sub-container2 img {
-  height: 100%;
-  width: 100%;
 }
